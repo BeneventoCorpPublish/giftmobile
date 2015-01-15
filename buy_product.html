@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Kasih kasih</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+<!--s:header-->
+<header>
+	<h1>Purchase</h1>
+	<a href="#" class="btn_home" title="home"><img src="img/header_btn_home.png" width="25" /></a>
+	<a href="#" class="btn_myzone" title="myZone">My<br />
+Zone</a>
+</header>
+<!--e:header-->
+
+<article id="buy_product" class="padd">
+	
+	<h2>Buy Product</h2>
+	
+	<form name="">
+		<!--s:Order Details-->
+		<table cellpadding="0" cellspacing="0" background="0" class="order_detail __article_table">
+			<thead><tr><th><h4>Order Details</h4></th></tr></thead>
+			<tbody>
+				<tr>
+					<td>
+						<ul class="__itemlist_type02">
+							<!--s:repeat-->
+							<li>
+								<a href="#">
+									<p class="thumb"><img src="img/img_product01.jpg" alt="Mint Chocolate Chip" title="Mint Chocolate Chip" width="100%" /></p>
+									<div class="info">
+										<span class="sbj">Mint Chocolate Chip</span>
+										<span class="brand">DUNKIN’ DONUTS</span>
+										<span class="pay"><strong>40</strong>$</span>
+
+										<div class="__count_range">
+											<input type="button" value="-" count_range="m"  />
+											<input type="text" name="" value="1" readonly="1" class="count" />
+											<input type="button" value="+" count_range="p"  />
+										</div>
+									</div>
+								</a>
+							</li>
+							<!--e:repeat-->
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="total_price">
+						<dl>
+							<dt>Total payment amount</dt>
+							<dd><span>40</span>$</dd>
+						</dl>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--e:Order Details-->	
+	
+		<!--s:gift recipient-->
+		<table cellpadding="0" cellspacing="0" border="0" class="select_list __article_table">
+			<thead><tr><th><h4>Gift recipient</h4></th></tr></thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="#" class="__btn_gray" title="Add from Contacts">Add from Contacts</a>
+						<ul class="rec_list">
+							<!--s:repeat-->
+							<li>
+								<span class="number">010-1234-5678</span>
+								<a href="#" class="__btn_dgray">Delete</a>
+							</li>
+							<!--e:repeat-->
+							<!--s:repeat-->
+							<li>
+								<span class="number">010-1234-5555</span>
+								<a href="#" class="__btn_dgray">Delete</a>
+							</li>
+							<!--e:repeat-->
+						</ul>
+						<span class="rec_total">
+							Selected recipients
+							<strong>0</span>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--e:gift recipient-->	
+	
+		<!--s:mms massage-->
+		<table cellpadding="0" cellspacing="0" border="0" class="mms_box __article_table">
+			<thead><tr><th><h4>MMS Massage</h4></th></tr></thead>
+			<tbody>
+				<tr>
+					<td>
+						<textarea></textarea>
+						<span><strong>0</strong> / 160byte</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--e:mms massage-->	
+	
+		<!--s:Edit decoration-->
+		<table cellpadding="0" cellspacing="0" border="0" class="edit_dec __article_table">
+			<thead><tr><th><h4>Edit decoration</h4></th></tr></thead>
+			<tbody>
+				<tr>
+					<td>
+						<img src="img/img_edit_barcode.jpg" width="100%" />
+						<p class="edit_card">
+							<img src="img/edit_card_01.jpg" width="100%" />
+							<a href="#">Edit</a>
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--e:Edit decoration-->	
+	
+		<!--s:btn bottom -->
+		<div class="__btn_btm">
+			<a href="#" class="__btn_btm_gray">Cancel</a>
+			<input type="submit" class="__btn_btm_blue" value="Pay">
+		</div>
+		<!--e:btn bottom -->
+	</form>	
+
+</article>
+
+<!--s:footer-->
+<footer>
+	<ul>
+		<li><a href="#">Login</a></li>
+		<li><a href="#">Customer<br />Service</a></li>
+		<li><a href="#">PC Ver.</a></li>
+	</ul>
+	<address>2014 © Kasih Kasih</address>
+</footer>
+<!--e:footer-->
+</body>
+</html>

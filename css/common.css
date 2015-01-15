@@ -1,0 +1,94 @@
+@charset "utf-8";
+/**************************************************
+	
+	Common
+	
+	Coded by Park.C.Y. & Kim.N.Y.
+	
+**************************************************/
+/*web fonts*/
+@font-face{ font-family:OpenSans; font-weight:100; src:url(../font/OpenSans-Light.eot); src:local('※'), url(../font/OpenSans-Light.woff) format('woff'); }
+@font-face{ font-family:OpenSans; font-weight:300; src:url(../font/OpenSans-Regular.eot); src:local('※'), url(../font/OpenSans-Regular.woff) format('woff'); }
+@font-face{ font-family:OpenSans; font-weight:600; src:url(../font/OpenSans-ExtraBold.eot); src:local('※'), url(../font/OpenSans-ExtraBold.woff) format('woff'); }
+
+/*reset browers*/
+*{ -webkit-text-size-adjust:none; -webkit-border-radius:0 }
+
+/*reset body and elements*/
+body,form,dl,dd{ margin:0; padding:0; }
+body,td,select,input,div,form,textarea,center,option,pre,p,span,blockquote,td,li,dd{ font-family:OpenSans, Tahoma, Arial, Helvetica, sans-serif; font-size:13px; color:#343434; letter-spacing:0; font-weight:300; }
+body{ line-height:18px; background:#f5f5f5; min-width:300px; }
+label{ cursor:pointer; }
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,dd,hgroup{ display:block; }
+img{ border:none; vertical-align:middle; }
+fieldset{ margin:0; padding:0; border:none; }
+legend{ margin:0; padding:0; }
+p{ margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{ margin:0; padding:0; text-align:left; }
+h2{ display:none; }
+ul{ margin:0; padding:0; list-style-type:none; }
+ul > li{ display:inline-block; *display:inline; *zoom:1; }
+
+/*reset inputs*/
+input[type=button],
+input[type=submit]{ -webkit-appearance:none; }
+input[type=checkbox],
+input[type=radio]{ border:none; vertical-align:middle; cursor:pointer; }
+input[type=search]{ border:none; height:50px; }
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=email],
+input[type=url],
+input[type=number],
+textarea{ width:100%; padding:10px 7px; border:1px solid #999; background-color:#FCFCFC; line-height:18px; margin-bottom:5px; -webkit-box-sizing : border-box;‌​  -moz-box-sizing : border-box; }
+select{ padding:5px; border:1px solid #999; background:#FCFCFC; cursor:pointer;display:inline-block; *display:inline; *zoom:1; -webkit-appearance: none; vertical-align:top; text-align:left; margin-right:8px; padding:0 10px; height:43px; border:none; background:#ffffff url(../img/sortingBar_spr.jpg) no-repeat right center; background-size:19px; border:1px solid #bababa; width:100%; }
+
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=search]:hover,
+input[type=email]:hover,
+input[type=url]:hover,
+input[type=number]:hover,
+textarea:hover{ border:1px solid #999; background:#fff; }
+select:hover{ background:#ffffff url(../img/sortingBar_spr.jpg) no-repeat right center; background-size:19px; border:1px solid #bababa; }
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=number]:focus,
+select:focus,
+textarea:focus{ background-color:#ffffff; }
+
+input[type=checkbox][disabled],
+input[type=radio][disabled]{ background-color:#ffffff; }
+input[disabled]{ background-color:#f3f3f3; }
+
+::-webkit-input-placeholder{ color:#98908b; }
+:-moz-placeholder{ color:#98908b; }
+::-moz-placeholder{ color:#98908b; }
+:-ms-input-placeholder{ color:#98908b; }
+
+/*reset links*/
+a:link{ text-decoration:none; color:#666666; }
+a:visited { text-decoration:none; color:#666666; }
+a:active { text-decoration:none; color:#666666; }
+a:hover{ text-decoration:underline; color:#000000; }
+
+/*Customizied checkbox, radio*/
+label.__checkboxArea{ display:block; background:url(../img/checkbox_bg.jpg) no-repeat 0 center; background-size:23px 22px; padding:11px 0 10px 35px; }
+label.__checkboxArea.active{ background:url(../img/checkbox_bg02.jpg) no-repeat 0 center; background-size:23px 22px; }
+input[type=checkbox]{ opacity:0; width:1px; height:1px; margin:0; padding:0; display:block; }
+label.__radioArea{ display:inline-block; width:40%;background:url(../img/radio_bg.png) no-repeat 0 center; background-size:23px 23px; padding:10px 0 10px 30px; }
+label.__radioArea.active{ background:url(../img/radio_bg02.png) no-repeat 0 center; background-size:23px 23px; }
+input[type=radio]{ opacity:0; width:10px; height:10px; margin:0; padding:0; display:block; }
+
+/*slide Pagination*/
+.slidesjs-pagination{ position:absolute; bottom:0; font-size:0; text-align:center; z-index:10; }
+.slidesjs-pagination li{ float:left;  margin:0 3px !important; }
+.slidesjs-pagination li a{ width:10px; height:10px; display:block; font-size:0; background-image:url(../img/main_visual_btn.png); background-position:0 0; float:left; overflow:hidden;  background-size:100%; }
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover,
+.slidesjs-pagination li a:hover.active { background-image:url(../img/main_visual_btn02.png) !important; }

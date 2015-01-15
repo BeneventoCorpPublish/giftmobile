@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Kasih kasih</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+<!--s:header-->
+<header>
+	<h1>Register</h1>
+	<a href="#" class="btn_home" title="home"><img src="img/header_btn_home.png" width="25" /></a>
+</header>
+<!--e:header-->
+
+<article id="register" class="padd">
+	
+	<!--s:regist form-->
+	<form name="" class="registerForm">
+		<fieldset>
+			<legend><h2>register member</h2></legend>
+			<table cellpadding="0" cellspacing="0" border="0" class="__myzone_table">
+				<tbody>
+					<tr>
+						<td>	
+							<strong>ID<em>*</em></strong>
+							<span class="sment_txt">Lower case letters,<br />lower case letters + number 6 to 12 characters</span>
+
+							<!-- 사용가능한 ID 일때 -->
+							<span class="__txt_match">Available ID.</span>
+
+							<input type="text" placeholder="ID" />			
+						</td>
+					</tr>
+					<tr>
+						<td>	
+							<strong>Password<em>*</em></strong>
+							<span class="sment_txt">Password have at least 6 to 12 combinations of numbers and characters</span>
+
+							<!-- 사용 불가능한 password 일때 -->
+							<span class="__txt_notmatch">The password does not match</span>
+
+							<input type="password" placeholder="Create Password" />
+							<input type="password" placeholder="Confirm Password" />
+						</td>
+					</tr>
+					<tr>
+						<td>	
+							<strong>Name<em>*</em></strong>
+							<input type="text" placeholder="First name" />
+							<input type="text" placeholder="Last name" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Cell Phone Number<em>*</em></strong>
+							<div class="cellphone_chek">
+								<input type="text" placeholder="‘-’ -Enter without" />
+								<a href="#" class="__btn_red">Retransmission</a>
+							</div>
+							<!-- 인증버튼 클릭시 보여줌 -->
+							<div class="cellphone_cer">
+								<input type="text" placeholder="Enter the verification code" />
+								<a href="#" class="__btn_red">Complete certification</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>	
+							<strong>Email<em>*</em></strong>
+							<input type="text" placeholder="abc@kasihkasih.com" />
+						</td>
+					</tr>
+					<tr>
+						<td>	
+							<strong>Gender</strong>
+							<label class="__radioArea">
+								<input type="radio" name="gender" value="male" checked />Male
+							</label>
+							<label class="__radioArea">
+								<input type="radio" name="gender" value="female" />Female
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td>	
+							<strong>Birthday</strong>
+							<div class="sel_group3">
+								<select>
+									<option value="Year" selected="selected">Year</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+								<select>
+									<option value="Month" selected="selected">Month</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+								<select>
+									<option value="Day" selected="selected">Day</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>	
+							<strong>My Account Number</strong>
+							<p>txts</p>
+							<select>
+								<option value="Deposit Bank" selected="selected">Deposit Bank</option>
+								<option value="Bank1">Bank1</option>
+								<option value="Bank2">Bank2</option>
+								<option value="Bank3">Bank3</option>
+							</select>
+							<div class="cellphone_chek">
+								<input type="text" placeholder="‘-’ -Enter without" />
+								<a href href="#" class="__btn_red">Certification</a>
+							</div>
+						</td>
+					</tr>	
+				</tbody>
+			</table>
+		</fieldset>
+	</form>
+	<!--e:regist form-->
+
+	<!--s:btn bottom -->
+	<div class="__btn_btm">
+		<a href="#" class="__btn_btm_gray">Cancel</a>
+		<input type="submit" class="__btn_btm_blue" value="Register" />
+	</div>
+	<!--e:btn bottom -->
+
+</article>
+
+<!--s:footer-->
+<footer>
+	<ul>
+		<li><a href="#">Login</a></li>
+		<li><a href="#">Customer<br />Service</a></li>
+		<li><a href="#">PC Ver.</a></li>
+	</ul>
+	<address>2014 © Kasih Kasih</address>
+</footer>
+<!--e:footer-->
+</body>
+</html>
