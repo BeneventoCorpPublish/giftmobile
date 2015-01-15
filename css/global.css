@@ -605,3 +605,11 @@ footer address{ display:block; font-size:12px; color:#9c9c9c; padding:15px 0; te
 #receive_gifts_not .totalCount{ font-weight:600; padding:10px; display:block; }
 #receive_gifts_not .totalCount > strong{ color:#e80000; padding-left:5px; }
 #receive_gifts_not .__itemlist_type01 > li.not_result{ border:none; width:100%; text-align:center; padding:30px 0; }
+
+/**************************************************
+	sent_gifts_not
+**************************************************/
+#sent_gifts_not .__tab > li{ width:50%; }
+#sent_gifts_not .totalCount{ font-weight:600; padding:10px; display:block; }
+#sent_gifts_not .totalCount > strong{ color:#e80000; padding-left:5px; }
+#sent_gifts_not .__itemlist_type01 > li.not_result{ border:none; width:100%; text-align:center; padding:30px 0; }
