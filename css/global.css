@@ -47,6 +47,7 @@
 
 /*icons*/
 .__ico_end{ position:absolute; right:0; top:0; width:80px; height:80px; background:url(../img/item_end_mark.png) no-repeat 0 0; background-size:80px 80px; font-size:0; line-height:0; z-index:12; }
+.__ico_used{ position:absolute; right:0; top:0; width:80px; height:80px; background:url(../img/item_used_mark.png) no-repeat 0 0; background-size:80px 80px; font-size:0; line-height:0; z-index:12; }
 .__ico_exp{ position:absolute; right:0; top:0; width:80px; height:80px; background:url(../img/item_exp_mark.png) no-repeat 0 0; background-size:80px 80px; font-size:0; line-height:0; z-index:12; }
 
 /*count range*/
