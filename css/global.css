@@ -343,12 +343,6 @@ footer address{ display:block; font-size:12px; color:#9c9c9c; padding:15px 0; te
 	buy
 **************************************************/
 #buy .sment_txt{ background:#e5e5e5; padding:10px; display:block; min-height:50px; }
-#buy .bank_slt{ margin-top:5px; }
-#buy .bank_paycode{ margin-top:5px; font-size:0; }
-#buy .bank_paycode > *{ vertical-align:top; display:inline-block; *display:inline; *zoom:1; margin:0; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-#buy .bank_paycode > input[type=text]{ width:60%; }
-#buy .bank_paycode > a.__btn_red{ width:40%; }
-
 #buy .totalPay{ position:relative; margin-top:5px; background:#eeece0; padding:15px; display:block; font-size:16px; color:#000; }
 #buy .totalPay .pay{ position:absolute; top:15px; right:15px; display:block; font-size:20px; color:#000; }
 #buy .totalPay .pay > strong{ color:#e80000; }
@@ -470,15 +464,10 @@ footer address{ display:block; font-size:12px; color:#9c9c9c; padding:15px 0; te
 	modify_me	
 **************************************************/
 #modify_me{ background:#f0f0f0; }
-#modify_me .cellphone_chek,
-#modify_me .account_num{ margin:5px 0; font-size:0; }
-#modify_me .cellphone_chek > *,
-#modify_me .account_num > *{ box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; vertical-align:top; display:inline-block; *display:inline; *zoom:1; margin:0; }
+#modify_me .cellphone_chek{ margin:5px 0; font-size:0; }
+#modify_me .cellphone_chek > *{ box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; vertical-align:top; display:inline-block; *display:inline; *zoom:1; margin:0; }
 #modify_me .cellphone_chek > input[type=text],
-#modify_me .account_num > input[type=text]{ width:60%; }
-#modify_me .cellphone_chek > a.__btn_red,
-#modify_me .account_num > a.__btn_red{ width:40%; }
-#modify_me .txt_Instruct{ display:block; text-align:center; color:#d2140d; }
+#modify_me .cellphone_chek > a.__btn_red{ width:40%; }
 
 /**************************************************
 	Customer pages
@@ -580,10 +569,11 @@ footer address{ display:block; font-size:12px; color:#9c9c9c; padding:15px 0; te
 #sent_gifts_view .gifts_detail td.total_price dl:after{ content:""; display:block; clear:both; }
 #sent_gifts_view .gifts_detail dl{ margin-bottom:10px; }
 #sent_gifts_view .gifts_detail dl:last-child{ margin-bottom:0; }
-#sent_gifts_view .gifts_detail dl:first-child dd{ font-size:17px;font-weight:bold; }
+#sent_gifts_view .gifts_detail dl dd{ font-size:17px;font-weight:bold; }
 #sent_gifts_view .gifts_detail dl > dt{ float:left; color:#000; font-size:13px; font-weight:bold;}
 #sent_gifts_view .gifts_detail dl > dd{ float:right; font-size:12px;}
 #sent_gifts_view .gifts_detail dl > dd > span{ font-size:17px; font-weight:bold; color:#e80000; }
+#sent_gifts_view .gifts_detail dl > dd.total_minPrice > span{ font-size:22px; }
 #sent_gifts_view .gifts_detail .__itemlist_type02{ margin:-10px -10px; }
 #sent_gifts_view .gifts_detail .__itemlist_type02 > li .info{ margin-top:15px;}
 #sent_gifts_view .gifts_info{ position:relative; }

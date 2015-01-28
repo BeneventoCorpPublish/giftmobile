@@ -201,7 +201,18 @@ $(document).ready(function(){
 	});
 });
 
-
+/**************************************************
+	buy
+**************************************************/
+$(document).ready(function(){
+	$('ul[toggleBtns] li').click(function(e){
+		e.preventDefault();
+		$('ul[toggleBtns] li').removeClass('active');
+		$(this).addClass('active');
+		$('span[toggle]').hide();
+		$('span[toggle='+$(this).attr('toggle')+']').show();
+	});
+});
 
 
 
