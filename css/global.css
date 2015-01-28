@@ -256,6 +256,11 @@ footer address{ display:block; font-size:12px; color:#9c9c9c; padding:15px 0; te
 #buy_product .edit_dec .edit_card{ position:relative; padding-top:10px; }
 #buy_product .edit_dec .edit_card > a{ display:inline-block; position:absolute; right:10px; top:20px; vertical-align:top; padding:10px 0; width:62px; color:#fff; background-color:#434343; border:1px solid #434343; font-size:18px; text-align:center; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
 
+#buy_product .sment_txt{ background:#e5e5e5; padding:10px; display:block; min-height:50px; }
+#buy_product .totalPay{ position:relative; margin-top:5px; background:#eeece0; padding:15px; display:block; font-size:16px; color:#000; }
+#buy_product .totalPay .pay{ position:absolute; top:15px; right:15px; display:block; font-size:20px; color:#000; }
+#buy_product .totalPay .pay > strong{ color:#e80000; }
+
 /**************************************************
 	brand_gallery
 **************************************************/
@@ -338,14 +343,6 @@ footer address{ display:block; font-size:12px; color:#9c9c9c; padding:15px 0; te
 #edit_card .cards > li:first-child{ padding-top:0; }
 #edit_card .cards > li.active{ border:5px solid #00b0e3; }
 #edit_card .cards > li > a{ display:block; }
-
-/**************************************************
-	buy
-**************************************************/
-#buy .sment_txt{ background:#e5e5e5; padding:10px; display:block; min-height:50px; }
-#buy .totalPay{ position:relative; margin-top:5px; background:#eeece0; padding:15px; display:block; font-size:16px; color:#000; }
-#buy .totalPay .pay{ position:absolute; top:15px; right:15px; display:block; font-size:20px; color:#000; }
-#buy .totalPay .pay > strong{ color:#e80000; }
 
 /**************************************************
 	search

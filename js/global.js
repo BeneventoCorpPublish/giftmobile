@@ -25,6 +25,17 @@ function alignElements_func(type,parent,element){
 	}
 }
 
+//Toggle menu
+$(document).ready(function(){
+	$('ul[toggleBtns] li').click(function(e){
+		e.preventDefault();
+		$('ul[toggleBtns] li').removeClass('active');
+		$(this).addClass('active');
+		$('span[toggle]').hide();
+		$('span[toggle='+$(this).attr('toggle')+']').show();
+	});
+});
+
 //Top banner
 $(window).load(function(){
 	alignElements_func('y','#top_banner','#top_banner .close');
@@ -198,19 +209,6 @@ $(document).ready(function(){
 		e.preventDefault();
 		$('#edit_card .cards > li').removeClass('active');
 		$(this).parent('li').addClass('active');
-	});
-});
-
-/**************************************************
-	buy
-**************************************************/
-$(document).ready(function(){
-	$('ul[toggleBtns] li').click(function(e){
-		e.preventDefault();
-		$('ul[toggleBtns] li').removeClass('active');
-		$(this).addClass('active');
-		$('span[toggle]').hide();
-		$('span[toggle='+$(this).attr('toggle')+']').show();
 	});
 });
 
