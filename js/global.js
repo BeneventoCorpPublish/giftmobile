@@ -25,16 +25,7 @@ function alignElements_func(type,parent,element){
 	}
 }
 
-//Toggle menu
-$(document).ready(function(){
-	$('ul[toggleBtns] li').click(function(e){
-		e.preventDefault();
-		$('ul[toggleBtns] li').removeClass('active');
-		$(this).addClass('active');
-		$('span[toggle]').hide();
-		$('span[toggle='+$(this).attr('toggle')+']').show();
-	});
-});
+
 
 //Top banner
 $(window).load(function(){
@@ -169,7 +160,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('#main .hotBrand .item_container').slidesjs({
 		width:$(window).width(),
-		height:$(window).width()/1.55,
+		height:$(window).width()/2.7,
 		navigation:false,
 		pagination:false
 	});
@@ -212,5 +203,17 @@ $(document).ready(function(){
 	});
 });
 
-
+/**************************************************
+	buy_product
+**************************************************/
+//Toggle menu
+$(document).ready(function(){
+	$('#buy_product ul[toggleBtns] > li').click(function(e){
+		e.preventDefault();
+		$('#buy_product ul[toggleBtns] >  li').removeClass('active');
+		$(this).addClass('active');
+		$('#buy_product span[toggle]').hide();
+		$('#buy_product span[toggle='+$(this).attr('toggle')+']').show();
+	});
+});
 

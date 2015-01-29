@@ -212,13 +212,12 @@ footer address{ display:block; font-size:12px; color:#9c9c9c; padding:15px 0; te
 
 #main .hotBrand{ position:relative; margin-top:15px; }
 #main .hotBrand a.leftBtn,
-#main .hotBrand a.rightBtn{ position:absolute; display:block; width:15px; height:30px; top:55%; background-size:100% 100%; z-index:11; }
+#main .hotBrand a.rightBtn{ position:absolute; display:block; width:15px; height:30px; top:50%; background-size:100% 100%; z-index:11; }
 #main .hotBrand a.leftBtn{ left:2%; background-image:url(../img/hotBrand_spr_l.png);  }
 #main .hotBrand a.rightBtn{ right:2%; background-image:url(../img/hotBrand_spr_r.png);  }
 #main .hotBrand .item_container{ margin-top:5px;background:#eeece0; }
-#main .hotBrand .item{ background:#eeece0; padding-top:5px; }
-#main .hotBrand .item a.logo{ display:block; margin:4% auto 5% auto; width:87%; }
-#main .hotBrand .item > ul{ display:block; margin:0 auto; width:87%; text-align:center; font-size:0; }
+#main .hotBrand .item{ background:#eeece0; }
+#main .hotBrand .item > ul{ display:block; margin:4% auto; width:87%; text-align:center; font-size:0; }
 #main .hotBrand .item > ul > li{ width:30%; margin-left:3%; }
 #main .hotBrand .item > ul > li:first-child{ margin-left:0; }
 #main .hotBrand .item > ul > li > a{ display:block; }
