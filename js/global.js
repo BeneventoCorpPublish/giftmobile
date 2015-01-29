@@ -160,7 +160,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('#main .hotBrand .item_container').slidesjs({
 		width:$(window).width(),
-		height:$(window).width()/2.7,
+		height:$(window).width()/1.55,
 		navigation:false,
 		pagination:false
 	});
