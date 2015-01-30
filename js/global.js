@@ -78,41 +78,46 @@ $(document).ready(function(){
 });
 
 //checkbox style
+function input_checked(obj,el_class){
+	if(obj.is(':checked')==true){
+		obj.parent('label'+el_class).addClass('active');
+	}else{
+		obj.parent('label'+el_class).removeClass('active');
+	}
+}
+function checkbox_change(obj){
+	if(obj=='load'){
+		$('input[type=checkbox]').each(function(){
+			input_checked($(this),'.__checkboxArea');
+		});
+	}else{
+		input_checked(obj,'.__checkboxArea');
+	}
+}
 $(document).ready(function(){
-	$('input[type=checkbox]').each(function(){
-		if($(this).is(':checked')==true){
-			$(this).parent('label.__checkboxArea').addClass('active');
-		}else{
-			$(this).parent('label.__checkboxArea').removeClass('active');
-		}
+	$('input[type=checkbox]').change(function(){
+		checkbox_change($(this));
 	});
-	$(document).on('click','input[type=checkbox]',function(){
-		if($(this).is(':checked')==true){
-			$(this).parent('label.__checkboxArea').addClass('active');
-		}else{
-			$(this).parent('label.__checkboxArea').removeClass('active');
-		}
-	});
+	checkbox_change('load');
 });
 
 //radio style
-$(document).ready(function(){
-	$('input[type=radio]').each(function(){
-		if($(this).is(':checked')==true){
-			$(this).parent('label.__radioArea').addClass('active');
-		}else{
-			$(this).parent('label.__radioArea').removeClass('active');
-		}
-	});
-	$(document).on('click','input[type=radio]',function(){
-		var radio_name = $(this).attr('name');
+function radio_change(obj){
+	if(obj=='load'){
+		$('input[type=radio]').each(function(){
+			input_checked($(this),'.__radioArea');
+		});
+	}else{
+		var radio_name = obj.attr('name');
 		$('input[type=radio][name='+radio_name+']').parent('label.__radioArea').removeClass('active');
-		if($(this).is(':checked')==true){
-			$(this).parent('label.__radioArea').addClass('active');
-		}else{
-			$(this).parent('label.__radioArea').removeClass('active');
-		}
+		input_checked(obj,'.__radioArea');
+	}
+}
+$(document).ready(function(){
+	$('input[type=radio]').change(function(){
+		radio_change($(this));
 	});
+	radio_change('load');
 });
 
 //tab scrolling
